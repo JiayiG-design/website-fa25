@@ -112,9 +112,217 @@ body {
     text-decoration: underline;
 }
 
-/* Quick links */
-.quick-links {
-    padding: 60px 0 80px;
+/* Fields of Interest */
+.fields-of-interest {
+    padding: 80px 0;
+    background-color: #fafafa;
+}
+
+.fields-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 60px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+}
+
+.fields-container {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    height: 600px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+/* Main fields and sub-fields are now positioned individually */
+.main-field, .sub-field, .cross-field {
+    position: absolute;
+}
+
+.education-main {
+    background-color: transparent;
+    color: #2196F3;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: none;
+}
+
+/* Education Sub-fields with exact colors */
+.education-science, .education-informal, .education-climate, .education-spaces {
+    position: absolute;
+    background-color: transparent;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.education-science { color: #1B5E20; }
+.education-informal { color: #5C6BC0; }
+.education-climate { color: #7986CB; }
+.education-spaces { color: #5C6BC0; }
+
+.education-science:hover, .education-informal:hover, .education-climate:hover, .education-spaces:hover {
+    transform: scale(1.05);
+    opacity: 0.7;
+}
+
+.environment-main {
+    background-color: transparent;
+    color: #388E3C;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: none;
+}
+
+/* Environment Sub-fields with exact colors */
+.environment-anthropology, .environment-organizations, .environment-perspectives, .environment-relationships, .environment-buildings {
+    position: absolute;
+    background-color: transparent;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.environment-anthropology { color: #4CAF50; }
+.environment-organizations { color: #616161; }
+.environment-perspectives { color: #81C784; }
+.environment-relationships { color: #43A047; }
+.environment-buildings { color: #AED581; }
+
+.environment-anthropology:hover, .environment-organizations:hover, .environment-perspectives:hover, .environment-relationships:hover, .environment-buildings:hover {
+    transform: scale(1.05);
+    opacity: 0.7;
+}
+
+.design-main {
+    background-color: transparent;
+    color: #8E24AA;
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: none;
+}
+
+/* Design Sub-fields with exact colors */
+.design-playground, .design-hci, .design-inclusive, .design-speculative, .design-creativity {
+    position: absolute;
+    background-color: transparent;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 6px;
+    white-space: nowrap;
+    box-shadow: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.design-playground { color: #BA68C8; }
+.design-hci { color: #AB47BC; }
+.design-inclusive { color: #7E57C2; }
+.design-speculative { color: #B39DDB; }
+.design-creativity { color: #CE93D8; }
+
+.design-playground:hover, .design-hci:hover, .design-inclusive:hover, .design-speculative:hover, .design-creativity:hover {
+    transform: scale(1.05);
+    opacity: 0.7;
+}
+
+/* Cross-disciplinary fields */
+.cross-field {
+    position: absolute;
+}
+
+/* Cross-disciplinary fields with exact colors */
+.cross-field {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.cross-field-healthy, .cross-field-psychology {
+    background-color: transparent;
+    font-size: 0.9rem;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    white-space: nowrap;
+    box-shadow: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.cross-field-healthy { color: #3F51B5; }
+.cross-field-psychology { color: #4CAF50; }
+
+.cross-field-healthy:hover, .cross-field-psychology:hover {
+    transform: scale(1.05);
+    opacity: 0.7;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .fields-container {
+        height: 600px;
+        max-width: 90%;
+    }
+    
+    .education-cluster {
+        top: 30px;
+    }
+    
+    .environment-cluster {
+        top: 200px;
+        left: 50px;
+    }
+    
+    .design-cluster {
+        top: 200px;
+        right: 50px;
+    }
+    
+    .education-main,
+    .environment-main,
+    .design-main {
+        font-size: 1.4rem;
+        padding: 12px 20px;
+    }
+    
+    .education-sub,
+    .environment-sub,
+    .design-sub {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+    
+    .cross-field {
+        position: static !important;
+        margin: 10px;
+        display: inline-block;
+    }
 }
 
 .link-grid {
