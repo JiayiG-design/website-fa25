@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Title - Jiayi Guo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .project-hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .project-hero h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .project-meta {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .project-description {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        
+        .project-content {
+            padding: 80px 0;
+        }
+        
+        .content-block {
+            margin-bottom: 80px;
+        }
+        
+        .content-block h2 {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .content-block p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .project-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .image-grid img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .video-container {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: #666;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-bottom: 40px;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: #333;
+        }
+        
+        .back-link::before {
+            content: "←";
+            margin-right: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .project-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .project-description {
+                font-size: 1.1rem;
+            }
+            
+            .content-block h2 {
+                font-size: 1.5rem;
+            }
+            
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-link">About Jiayi</a>
+            <a href="../design.html" class="nav-link">Design</a>
+            <a href="../research.html" class="nav-link">Research</a>
+            <a href="../playground.html" class="nav-link">Playground</a>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <a href="../design.html" class="back-link">Back to Design</a>
+            
+            <section class="project-hero">
+                <h1>Project Title</h1>
+                <div class="project-meta">Category • Year • Role</div>
+                <p class="project-description">
+                    Brief project description that explains the context, goals, and outcomes. 
+                    This should provide a clear overview of what the project was about and 
+                    what was accomplished.
+                </p>
+            </section>
+
+            <section class="project-content">
+                <div class="content-block">
+                    <h2>Challenge</h2>
+                    <p>
+                        Describe the problem or challenge that this project addressed. What was the 
+                        context? Who were the users? What were the constraints and requirements?
+                    </p>
+                </div>
+
+                <div class="content-block">
+                    <h2>Process</h2>
+                    <p>
+                        Explain your design process and methodology. What steps did you take? 
+                        What research did you conduct? How did you approach the problem?
+                    </p>
+                    
+                    <!-- Example image -->
+                    <img src="../images/placeholder-process.jpg" alt="Design process" class="project-image">
+                </div>
+
+                <div class="content-block">
+                    <h2>Solution</h2>
+                    <p>
+                        Describe the final solution and key design decisions. What did you create? 
+                        How does it address the original challenge? What makes it unique or effective?
+                    </p>
+                    
+                    <!-- Example image grid -->
+                    <div class="image-grid">
+                        <img src="../images/placeholder-solution-1.jpg" alt="Solution overview">
+                        <img src="../images/placeholder-solution-2.jpg" alt="Solution detail">
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>Results</h2>
+                    <p>
+                        Share the outcomes and impact of your work. What were the results? 
+                        How did users respond? What did you learn from this project?
+                    </p>
+                    
+                    <!-- Example video container -->
+                    <div class="video-container">
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>Reflection</h2>
+                    <p>
+                        Reflect on the project experience. What went well? What would you do differently? 
+                        What insights did you gain? How did this project contribute to your growth as a designer?
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Jiayi Guo. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

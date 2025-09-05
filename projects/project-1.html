@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Banking App Redesign - Jiayi Guo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        .project-hero {
+            padding: 120px 0 80px;
+            text-align: center;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+        
+        .project-hero h1 {
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .project-meta {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 30px;
+        }
+        
+        .project-description {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.7;
+        }
+        
+        .project-content {
+            padding: 80px 0;
+        }
+        
+        .content-block {
+            margin-bottom: 80px;
+        }
+        
+        .content-block h2 {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .content-block p {
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        
+        .project-image {
+            width: 100%;
+            max-width: 800px;
+            margin: 40px auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .image-grid img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            color: #666;
+            text-decoration: none;
+            font-size: 1rem;
+            margin-bottom: 40px;
+            transition: color 0.3s ease;
+        }
+        
+        .back-link:hover {
+            color: #333;
+        }
+        
+        .back-link::before {
+            content: "←";
+            margin-right: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .project-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .project-description {
+                font-size: 1.1rem;
+            }
+            
+            .content-block h2 {
+                font-size: 1.5rem;
+            }
+            
+            .image-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-link">About Jiayi</a>
+            <a href="../design.html" class="nav-link">Design</a>
+            <a href="../research.html" class="nav-link">Research</a>
+            <a href="../playground.html" class="nav-link">Playground</a>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <a href="../design.html" class="back-link">Back to Design</a>
+            
+            <section class="project-hero">
+                <h1>Mobile Banking App Redesign</h1>
+                <div class="project-meta">UX Design • 2024 • Lead Designer</div>
+                <p class="project-description">
+                    A comprehensive redesign of a mobile banking application focusing on accessibility, 
+                    user trust, and intuitive navigation for diverse user groups across different age ranges.
+                </p>
+            </section>
+
+            <section class="project-content">
+                <div class="content-block">
+                    <h2>Challenge</h2>
+                    <p>
+                        The existing mobile banking app had significant usability issues, particularly for 
+                        older users and those with accessibility needs. Users reported difficulty navigating 
+                        the interface, understanding financial information, and completing basic transactions. 
+                        The app also lacked modern design patterns and failed to build trust through its 
+                        visual design.
+                    </p>
+                    <p>
+                        Key challenges included: complex navigation structure, poor information hierarchy, 
+                        lack of accessibility features, outdated visual design, and insufficient error 
+                        handling and feedback mechanisms.
+                    </p>
+                </div>
+
+                <div class="content-block">
+                    <h2>Research & Discovery</h2>
+                    <p>
+                        I conducted extensive user research including interviews with 25 users across 
+                        different age groups, usability testing sessions, and competitive analysis of 
+                        leading banking apps. The research revealed that users valued simplicity, clear 
+                        communication, and a sense of security above all else.
+                    </p>
+                    
+                    <img src="../images/placeholder-research.jpg" alt="User research insights" class="project-image">
+                </div>
+
+                <div class="content-block">
+                    <h2>Design Process</h2>
+                    <p>
+                        The design process followed a human-centered approach, starting with user journey 
+                        mapping and information architecture restructuring. I created wireframes and 
+                        prototypes that were tested iteratively with users to ensure the design met 
+                        their needs and expectations.
+                    </p>
+                    
+                    <div class="image-grid">
+                        <img src="../images/placeholder-wireframes.jpg" alt="Initial wireframes">
+                        <img src="../images/placeholder-prototypes.jpg" alt="Interactive prototypes">
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h2>Key Design Solutions</h2>
+                    <p>
+                        <strong>Simplified Navigation:</strong> Reduced the main navigation to 4 core functions 
+                        (Accounts, Transfer, Pay, More) with clear visual hierarchy and intuitive icons.
+                    </p>
+                    <p>
+                        <strong>Enhanced Accessibility:</strong> Implemented high contrast modes, larger touch 
+                        targets, voice-over compatibility, and clear typography with sufficient spacing.
+                    </p>
+                    <p>
+                        <strong>Trust-Building Design:</strong> Used a clean, professional color palette with 
+                        subtle gradients and shadows to create a sense of security and reliability.
+                    </p>
+                    <p>
+                        <strong>Progressive Disclosure:</strong> Organized complex information in digestible 
+                        chunks with clear calls-to-action and contextual help.
+                    </p>
+                    
+                    <img src="../images/placeholder-final-design.jpg" alt="Final design screens" class="project-image">
+                </div>
+
+                <div class="content-block">
+                    <h2>Results</h2>
+                    <p>
+                        The redesigned app showed significant improvements in user satisfaction and task 
+                        completion rates. Usability testing revealed a 40% reduction in task completion 
+                        time and a 60% increase in user confidence when performing financial transactions.
+                    </p>
+                    <p>
+                        Key metrics improved:
+                    </p>
+                    <ul style="margin-left: 20px; color: #555; line-height: 1.7;">
+                        <li>Task completion rate: 85% → 96%</li>
+                        <li>User satisfaction score: 3.2/5 → 4.6/5</li>
+                        <li>Accessibility compliance: 60% → 95%</li>
+                        <li>Support ticket reduction: 35%</li>
+                    </ul>
+                </div>
+
+                <div class="content-block">
+                    <h2>Reflection</h2>
+                    <p>
+                        This project reinforced the importance of inclusive design and user research in 
+                        financial applications. The most valuable insight was understanding that trust 
+                        in banking apps is built not just through security features, but through clear 
+                        communication and predictable interactions.
+                    </p>
+                    <p>
+                        The iterative testing process was crucial in identifying pain points that weren't 
+                        apparent in initial user interviews. Moving forward, I would incorporate more 
+                        diverse user groups in the testing phase and consider the emotional aspects of 
+                        financial management more deeply in the design process.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Jiayi Guo. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
