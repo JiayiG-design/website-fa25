@@ -90,8 +90,26 @@ body {
     font-size: 1.1rem;
     color: #555;
     max-width: 600px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     line-height: 1.7;
+}
+
+.hero-links {
+    font-size: 1rem;
+    color: #666;
+    margin-top: 30px;
+}
+
+.hero-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.hero-links a:hover {
+    color: #666;
+    text-decoration: underline;
 }
 
 /* Quick links */
